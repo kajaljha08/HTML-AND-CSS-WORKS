@@ -1,0 +1,98 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.form-container{
+    background-color:violet;
+    padding:30px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 20x rgba(0,0,0,0.15);
+    width:100%
+    max width:400px;
+    margin:0 auto;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-image:url("https://th.bing.com/th/id/OIP.HO1oMndx0PUdA3uU4XVBpwHaO0?rs=1&pid=ImgDetMain")  ;
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding:20px;
+
+}
+/*Title of form*/
+h1{
+    text-align: center;
+    font-size: 14px;
+    color:yellow;
+    font-style:normal
+    margin-bottom:20px;
+}
+label{
+    font-size:14px ;
+    color:#000;
+    margin-bottom: 5px;
+    display: block;
+}
+/* style for eachform field */
+
+
+/*input and textarea styling*/
+input[type="text"],
+input[type="text"],
+input[type="text"],
+input[type="text"],
+input[type="number"],
+input[type=number],
+textarea{
+ width:100%;
+ padding:12px;
+ margin-bottom: 6px;
+ border:3px solid #ddd;
+ border-radius: 4px;
+ font-size: 15px;
+ background-color:#f9f9f9;
+ 
+}
+textarea{
+    resize:vertical;
+    height:150px;
+}
+::placeholder{
+    color:#aaa;
+
+}
+input:focus,textarea:focus{
+    border-color: #4CaF50;
+    outline:none;
+    background-color: #fff;
+}
+button{
+    background-color:#4CAF50;
+    color: WHITE;
+    border:none;
+    padding:12px;
+    width:100%
+    font-size:16px;
+    cursor:pointer;
+    border-radius:4px;
+    transition:background-color 0.3s ease;
+} 
+button:hover{
+    background-color:#45a049;
+}
+.error{
+    color:red;
+    font-size:12px;
+    margin-top:5px;
+    display:none;
+}
+input:invalid+error{
+    display:block;
+}
+
+
+
+
